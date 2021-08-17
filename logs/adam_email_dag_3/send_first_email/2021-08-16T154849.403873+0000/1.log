@@ -1,0 +1,23 @@
+[2021-08-16 15:48:58,351] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: adam_email_dag_3.send_first_email 2021-08-16T15:48:49.403873+00:00 [queued]>
+[2021-08-16 15:48:58,448] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: adam_email_dag_3.send_first_email 2021-08-16T15:48:49.403873+00:00 [queued]>
+[2021-08-16 15:48:58,450] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-16 15:48:58,454] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-08-16 15:48:58,456] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-16 15:48:58,524] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): send_first_email> on 2021-08-16T15:48:49.403873+00:00
+[2021-08-16 15:48:58,558] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'adam_email_dag_3', 'send_first_email', '2021-08-16T15:48:49.403873+00:00', '--job-id', '84', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/adam-dag-2.py', '--cfg-path', '/tmp/tmpuyk6zogk', '--error-file', '/tmp/tmpzsqr1wrp']
+[2021-08-16 15:48:58,560] {standard_task_runner.py:77} INFO - Job 84: Subtask send_first_email
+[2021-08-16 15:48:58,548] {standard_task_runner.py:52} INFO - Started process 565 to run task
+[2021-08-16 15:48:58,632] {logging_mixin.py:104} INFO - Running <TaskInstance: adam_email_dag_3.send_first_email 2021-08-16T15:48:49.403873+00:00 [running]> on host 8f195762143d
+[2021-08-16 15:48:58,778] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=adam_email_dag_3
+AIRFLOW_CTX_TASK_ID=send_first_email
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-16T15:48:49.403873+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-08-16T15:48:49.403873+00:00
+[2021-08-16 15:49:00,068] {logging_mixin.py:104} INFO - Email sent successfully!
+[2021-08-16 15:49:00,072] {python.py:118} INFO - Done. Returned value was: None
+[2021-08-16 15:49:00,104] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=adam_email_dag_3, task_id=send_first_email, execution_date=20210816T154849, start_date=20210816T154858, end_date=20210816T154900
+[2021-08-16 15:49:00,217] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-08-16 15:49:00,269] {local_task_job.py:146} INFO - Task exited with return code 0

@@ -1,0 +1,27 @@
+[2021-08-17 16:04:21,256] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: alison_bash_dag.print_date 2021-08-16T00:00:00+00:00 [queued]>
+[2021-08-17 16:04:21,278] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: alison_bash_dag.print_date 2021-08-16T00:00:00+00:00 [queued]>
+[2021-08-17 16:04:21,280] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-17 16:04:21,281] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-08-17 16:04:21,281] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-17 16:04:21,295] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): print_date> on 2021-08-16T00:00:00+00:00
+[2021-08-17 16:04:21,303] {standard_task_runner.py:52} INFO - Started process 49 to run task
+[2021-08-17 16:04:21,317] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'alison_bash_dag', 'print_date', '2021-08-16T00:00:00+00:00', '--job-id', '92', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/adam-dag.py', '--cfg-path', '/tmp/tmp_zlmwa_d', '--error-file', '/tmp/tmpeyuqk5o9']
+[2021-08-17 16:04:21,335] {standard_task_runner.py:77} INFO - Job 92: Subtask print_date
+[2021-08-17 16:04:21,406] {logging_mixin.py:104} INFO - Running <TaskInstance: alison_bash_dag.print_date 2021-08-16T00:00:00+00:00 [running]> on host 69d5ef3babdf
+[2021-08-17 16:04:21,455] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=alison_bash_dag
+AIRFLOW_CTX_TASK_ID=print_date
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-16T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-08-16T00:00:00+00:00
+[2021-08-17 16:04:21,455] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2021-08-17 16:04:21,457] {bash.py:158} INFO - Running command: date
+[2021-08-17 16:04:21,478] {bash.py:169} INFO - Output:
+[2021-08-17 16:04:21,498] {bash.py:173} INFO - Tue Aug 17 16:04:21 UTC 2021
+[2021-08-17 16:04:21,498] {bash.py:177} INFO - Command exited with return code 0
+[2021-08-17 16:04:21,537] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=alison_bash_dag, task_id=print_date, execution_date=20210816T000000, start_date=20210817T160421, end_date=20210817T160421
+[2021-08-17 16:04:21,583] {taskinstance.py:1220} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2021-08-17 16:04:21,635] {local_task_job.py:146} INFO - Task exited with return code 0

@@ -8,7 +8,7 @@ from airflow.operators.python_operator import PythonOperator
 from textwrap import dedent
 
 @dag(start_date=days_ago(2))
-def alison_bash_dag():
+def brad_bash_dag():
     t1=BashOperator(
         task_id='print_date',
         bash_command='date',
@@ -42,4 +42,5 @@ def alison_bash_dag():
 
     t1 >> [t2, t3]
 
-dag = alison_bash_dag()
+
+dag = brad_bash_dag()

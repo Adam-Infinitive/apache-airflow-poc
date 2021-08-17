@@ -10,8 +10,8 @@ def pushS3():
 
     client.create_bucket(Bucket='adam-airflow-test')
 
-    with open("../data/data.csv", "rb") as f:
-        client.upload_fileobj(f,'adam-airflow-test',"data.csv")
+    # with open("../data/data.csv", "rb") as f:
+    #     client.upload_fileobj(f,'adam-airflow-test',"data.csv")
 
     print("Upload Completed")
 

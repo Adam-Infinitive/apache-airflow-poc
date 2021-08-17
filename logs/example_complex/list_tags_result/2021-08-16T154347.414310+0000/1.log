@@ -1,0 +1,27 @@
+[2021-08-16 15:47:43,692] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: example_complex.list_tags_result 2021-08-16T15:43:47.414310+00:00 [queued]>
+[2021-08-16 15:47:43,752] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: example_complex.list_tags_result 2021-08-16T15:43:47.414310+00:00 [queued]>
+[2021-08-16 15:47:43,762] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-16 15:47:43,765] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-08-16 15:47:43,766] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-16 15:47:43,791] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): list_tags_result> on 2021-08-16T15:43:47.414310+00:00
+[2021-08-16 15:47:43,813] {standard_task_runner.py:52} INFO - Started process 477 to run task
+[2021-08-16 15:47:43,838] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'example_complex', 'list_tags_result', '2021-08-16T15:43:47.414310+00:00', '--job-id', '60', '--pool', 'default_pool', '--raw', '--subdir', '/home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_complex.py', '--cfg-path', '/tmp/tmpwuol0j6s', '--error-file', '/tmp/tmp3narhbq6']
+[2021-08-16 15:47:43,852] {standard_task_runner.py:77} INFO - Job 60: Subtask list_tags_result
+[2021-08-16 15:47:44,065] {logging_mixin.py:104} INFO - Running <TaskInstance: example_complex.list_tags_result 2021-08-16T15:43:47.414310+00:00 [running]> on host 8f195762143d
+[2021-08-16 15:47:44,180] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=example_complex
+AIRFLOW_CTX_TASK_ID=list_tags_result
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-16T15:43:47.414310+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-08-16T15:43:47.414310+00:00
+[2021-08-16 15:47:44,184] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2021-08-16 15:47:44,188] {bash.py:158} INFO - Running command: echo list_tags_result
+[2021-08-16 15:47:44,248] {bash.py:169} INFO - Output:
+[2021-08-16 15:47:44,254] {bash.py:173} INFO - list_tags_result
+[2021-08-16 15:47:44,266] {bash.py:177} INFO - Command exited with return code 0
+[2021-08-16 15:47:44,332] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=example_complex, task_id=list_tags_result, execution_date=20210816T154347, start_date=20210816T154743, end_date=20210816T154744
+[2021-08-16 15:47:44,976] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-08-16 15:47:45,057] {local_task_job.py:146} INFO - Task exited with return code 0

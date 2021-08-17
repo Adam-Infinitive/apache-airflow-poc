@@ -1,0 +1,29 @@
+[2021-08-16 15:47:25,970] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: example_complex.create_tag_template_field 2021-08-16T15:43:47.414310+00:00 [queued]>
+[2021-08-16 15:47:26,046] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: example_complex.create_tag_template_field 2021-08-16T15:43:47.414310+00:00 [queued]>
+[2021-08-16 15:47:26,054] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-16 15:47:26,056] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-08-16 15:47:26,056] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-16 15:47:26,114] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): create_tag_template_field> on 2021-08-16T15:43:47.414310+00:00
+[2021-08-16 15:47:26,160] {standard_task_runner.py:52} INFO - Started process 403 to run task
+[2021-08-16 15:47:26,201] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'example_complex', 'create_tag_template_field', '2021-08-16T15:43:47.414310+00:00', '--job-id', '37', '--pool', 'default_pool', '--raw', '--subdir', '/home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_complex.py', '--cfg-path', '/tmp/tmppv27fpz7', '--error-file', '/tmp/tmpo5kwjcf_']
+[2021-08-16 15:47:26,211] {standard_task_runner.py:77} INFO - Job 37: Subtask create_tag_template_field
+[2021-08-16 15:47:26,401] {logging_mixin.py:104} INFO - Running <TaskInstance: example_complex.create_tag_template_field 2021-08-16T15:43:47.414310+00:00 [running]> on host 8f195762143d
+[2021-08-16 15:47:26,572] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=example_complex
+AIRFLOW_CTX_TASK_ID=create_tag_template_field
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-16T15:43:47.414310+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-08-16T15:43:47.414310+00:00
+[2021-08-16 15:47:26,577] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2021-08-16 15:47:26,624] {bash.py:158} INFO - Running command: echo create_tag_template_field
+[2021-08-16 15:47:26,825] {bash.py:169} INFO - Output:
+[2021-08-16 15:47:26,937] {bash.py:173} INFO - create_tag_template_field
+[2021-08-16 15:47:26,943] {bash.py:177} INFO - Command exited with return code 0
+[2021-08-16 15:47:27,031] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=example_complex, task_id=create_tag_template_field, execution_date=20210816T154347, start_date=20210816T154725, end_date=20210816T154727
+[2021-08-16 15:47:31,608] {local_task_job.py:188} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2021-08-16 15:47:31,782] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-08-16 15:47:31,726] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 403
+[2021-08-16 15:47:31,933] {process_utils.py:66} INFO - Process psutil.Process(pid=403, status='terminated', exitcode=0, started='15:47:26') (403) terminated with exit code 0
